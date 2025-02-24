@@ -18,12 +18,12 @@ const KelasPage = () => {
             {semuaKelas.map((kelas) => {
               return (<Col key={kelas.id} className="shadow rounded">
                 <img src={kelas.image} alt="unsplash.com" className="w-100 mb-5 rounded-top" />
-                <div className="star mb-2">
-                  <i className="kelas.star1"></i>
-                  <i className="kelas.star2"></i>
-                  <i className="kelas.star3"></i>
-                  <i className="kelas.star4"></i>
-                  <i className="kelas.star5"></i>
+                <div className="star mb-2 px-3">
+                  <i className={kelas.star1}></i>
+                  <i className={kelas.star2}></i>
+                  <i className={kelas.star3}></i>
+                  <i className={kelas.star4}></i>
+                  <i className={kelas.star5 }></i>
                 </div>
                 <h5 className="mb-5 px-3">{kelas.title}</h5>
                 <div className="ket d-flex justify-content-between align-items-center px-3 pb-3">
